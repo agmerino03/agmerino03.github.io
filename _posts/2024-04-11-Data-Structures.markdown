@@ -1,9 +1,9 @@
 ---
 layout: default
 modal-id: 4
-date: 2014-08-15
+date: 2024-04-11
 img: s3dproducts-preview.png
-alt: Structur3D Printing
+alt: Data Structures
 project-date: May 2014
 client: Structur3D Printing
 clienturl: http://www.structur3d.io/

@@ -1,9 +1,9 @@
 ---
 layout: default
 modal-id: 5
-date: 2014-08-28
+date: 2024-04-11
 img: poolparty-preview.png
-alt: Pool Party Plus
+alt: Art With Drones
 project-date: May 2013
 client: Pool Party Plus
 clienturl: javascript:void(0);
