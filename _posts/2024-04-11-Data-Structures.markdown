@@ -4,11 +4,11 @@ modal-id: 4
 date: 2024-04-11
 img: s3dproducts-preview.png
 alt: Data Structures
-project-date: May 2014
-client: Structur3D Printing
-clienturl: http://www.structur3d.io/
-projecturl: javascript:void(0);
-category: Photography, Videography, Graphics Design
-description: Product photography, graphics design and videos for, <a href="http://www.structur3d.io/" target="_blank">Structur3D Printing</a>.
+project-date: May 2023
+client: N/A
+clienturl: https://www.github.com/agmg16-ua
+projecturl: https://www.github.com/agmg16-ua
+category: C++, Memory control, Data Structures
+description: Implementation of different functional data structures
 
 ---
