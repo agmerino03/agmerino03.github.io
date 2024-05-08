@@ -2,7 +2,7 @@
 layout: default
 modal-id: 0
 date: 2024-04-11
-img: angular-invasive-preview.png
+#img: angular-invasive-preview.png
 alt: FrikiPop
 project-date: May 2023
 client: N/A

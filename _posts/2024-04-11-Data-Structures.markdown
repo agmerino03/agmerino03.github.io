@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2024-04-11
-img: s3dproducts-preview.png
+#img: s3dproducts-preview.png
 alt: Data Structures
 project-date: May 2023
 client: N/A

@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2024-04-10
-img: portfolio-preview.png
+#img: portfolio-preview.png
 alt: Portfolio
 project-date: April 2024
 client: Myself

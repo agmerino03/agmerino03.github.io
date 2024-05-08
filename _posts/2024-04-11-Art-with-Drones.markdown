@@ -2,7 +2,7 @@
 layout: default
 modal-id: 5
 date: 2024-04-11
-img: poolparty-preview.png
+#img: poolparty-preview.png
 alt: Art With Drones
 project-date: January 2024
 client: N/A

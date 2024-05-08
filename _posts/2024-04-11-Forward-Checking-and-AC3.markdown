@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2024-04-11
-img: structur3d-preview.png
+#img: structur3d-preview.png
 alt: Forward Checking and AC3
 project-date: November 2023
 client: N/A

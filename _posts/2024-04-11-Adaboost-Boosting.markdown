@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2024-04-11
-img: fishmap-preview.png
+#img: fishmap-preview.png
 alt: Adaboost and Boosting
 project-date: November 2023
 client: N/A
