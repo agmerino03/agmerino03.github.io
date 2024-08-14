@@ -5,6 +5,10 @@
 	padding: 25px 0;
 }
 
-.bg-png {
+.bg1-png {
 	background: #fff url(../img/light_mosaic.png) repeat 0 0;
+}
+
+.bg2.png {
+	background: #fff url(../img/panal_mosaic.png) repeat 0 0;
 }
