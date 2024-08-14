@@ -24,6 +24,7 @@
 .fa-stack {
     flex-shrink: 0; /* Evita que el ícono se reduzca si el texto es largo */
     margin-right: 15px; /* Espacio entre el ícono y el texto */
+	margin-left: 20px;
 }
 
 .cert-title {
