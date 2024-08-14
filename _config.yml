@@ -1,0 +1,30 @@
+# Site settings
+title: My Portfolio
+email: agmerino03@gmail.com
+description: "Alejandro's Portfolio"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: fed136
+  secondary: fec503 
+  secondary-dark: 000
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/alejandro-guillen-merino-589a3223a/
+  - title: github
+    url: http://github.com/agmerino03
+  - title: github
+    url: http://github.com/agmg16-ua
+  - title: envelope
+    url: mailto:agmerino03@gmail.com
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Alicante/Alacant, 03010
+  - line: Comunidad Valenciana, Spain
+
+# Build settings
+markdown: kramdown
+permalink: pretty
