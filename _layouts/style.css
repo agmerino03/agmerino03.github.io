@@ -8,3 +8,32 @@
 .bg-png {
 	background: #fff url(../img/light_mosaic.png) repeat 0 0;
 }
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fa-stack {
+    flex-shrink: 0; /* Evita que el ícono se reduzca si el texto es largo */
+    margin-right: 15px; /* Espacio entre el ícono y el texto */
+}
+
+.cert-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px; /* Espacio entre el título y la fuente */
+}
+
+.cert-source {
+    font-size: 16px;
+    color: #555; /* Color gris para diferenciar la fuente */
+}
+
