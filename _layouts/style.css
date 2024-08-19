@@ -15,33 +15,36 @@
 }
 
 .custom-table {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border-collapse: collapse;
 }
 
-.custom-table td {
-    width: 100px;
+.custom-row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Para separar las "filas" */
+}
+
+.custom-cell {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    text-align: left; /* Justifica a la izquierda */
     padding: 10px;
-    vertical-align: middle; /* Centra el contenido verticalmente */
 }
 
-.custom-table .icono  {
-    /*width: 1px;*/
-    text-align: center;
+.icono {
+    width: 50px; /* Ajusta el ancho de la columna del icono */
+    justify-content: center; /* Centra el icono horizontalmente */
 }
 
-.custom-table .cert-title {
-    text-align: left; /* Justifica el contenido a la izquierda */
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 10px; /* Espacio entre el título y la fuente */
-    /*width: 100px; /* Ajusta el ancho de la columna del título */
+.cert-title {
+    flex: 1; /* Ocupa el espacio restante */
 }
 
-.custom-table .platform {
-    text-align: left; /* Justifica el contenido a la izquierda */
-    font-size: 16px;
-    color: #555; /* Color gris para diferenciar la fuente */
-    /*width: 50px; /* Ajusta el ancho de la columna de la plataforma */
+.platform {
+    width: 150px; /* Ancho fijo para la plataforma */
 }
+
 
