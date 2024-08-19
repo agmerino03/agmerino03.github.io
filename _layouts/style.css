@@ -28,17 +28,21 @@
 
 .custom-cell {
     float: left;
-    align-items: center; /* Centra verticalmente */
+    vertical-align: middle;
     text-align: left; /* Justifica a la izquierda */
     padding: 10px;
 }
 
+.icono {
+    width: 20px;
+}
+
 .cert-title {
-    flex: 1; /* Ocupa el espacio restante */
+    width: 100px;
 }
 
 .platform {
-    width: 150px; /* Ancho fijo para la plataforma */
+    width: 50px;
 }
 
 
