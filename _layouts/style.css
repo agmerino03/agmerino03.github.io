@@ -27,14 +27,10 @@
 }
 
 .custom-cell {
+    float: left;
     align-items: center; /* Centra verticalmente */
     text-align: left; /* Justifica a la izquierda */
     padding: 10px;
-}
-
-.icono {
-    width: 50px; /* Ajusta el ancho de la columna del icono */
-    justify-content: center; /* Centra el icono horizontalmente */
 }
 
 .cert-title {
