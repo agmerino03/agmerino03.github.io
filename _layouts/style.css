@@ -29,7 +29,8 @@
 
 .custom-cell {
     float: left;
-    text-align: center;
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
     text-align: left; /* Justifica a la izquierda */
     padding: 10px;
 }
