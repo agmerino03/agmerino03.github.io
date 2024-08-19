@@ -15,7 +15,9 @@
 }
 
 .custom-table {
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
 }
 
 .custom-row {
