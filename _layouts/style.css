@@ -9,6 +9,11 @@
 	background: #fff url(../img/light_mosaic.png) repeat 0 0;
 }
 
+.fa-stack {
+    flex-shrink: 0; /* Evita que el ícono se reduzca si el texto es largo */
+    margin-right: 15px; /* Espacio entre el ícono y el texto */ 
+}
+
 .custom-table {
     width: 100%;
     border-collapse: collapse;
@@ -20,9 +25,8 @@
     text-align: left; /* Justifica el contenido a la izquierda */
 }
 
-.fa-stack {
-    flex-shrink: 0; /* Evita que el ícono se reduzca si el texto es largo */
-    margin-right: 15px; /* Espacio entre el ícono y el texto */ 
+.custom-table .icono {
+    width: 100px;
 }
 
 .custom-table .cert-title {
