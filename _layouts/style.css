@@ -20,12 +20,13 @@
 }
 
 .custom-table td {
+    width: 100px;
     padding: 10px;
     vertical-align: middle; /* Centra el contenido verticalmente */
 }
 
 .custom-table .icono  {
-    width: 1px;
+    /*width: 1px;*/
     text-align: center;
 }
 
@@ -34,13 +35,13 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px; /* Espacio entre el título y la fuente */
-    width: 100px; /* Ajusta el ancho de la columna del título */
+    /*width: 100px; /* Ajusta el ancho de la columna del título */
 }
 
 .custom-table .platform {
     text-align: left; /* Justifica el contenido a la izquierda */
     font-size: 16px;
     color: #555; /* Color gris para diferenciar la fuente */
-    width: 50px; /* Ajusta el ancho de la columna de la plataforma */
+    /*width: 50px; /* Ajusta el ancho de la columna de la plataforma */
 }
 
