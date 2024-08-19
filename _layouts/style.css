@@ -34,15 +34,19 @@
 }
 
 .icono {
-    width: 20px;
-}
-
-.cert-title {
     width: 100px;
 }
 
+.cert-title {
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .platform {
-    width: 50px;
+    width: 100px;
+    font-size: 16px;
+    color: #555;
 }
 
 
