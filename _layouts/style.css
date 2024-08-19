@@ -26,6 +26,7 @@
     flex-direction: row;
     text-align: center;
     padding: 10px 0;
+    justify-content: center;
     border-bottom: 1px solid #ccc; /* Para separar las "filas" */
     width: 500px;
 }
