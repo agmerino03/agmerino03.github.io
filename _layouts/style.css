@@ -30,7 +30,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px; /* Espacio entre el título y la fuente */
-    width: 500px; /* Ancho fijo para los títulos */
+    width: 400px; /* Ancho fijo para los títulos */
 }
 
 .cert-source {
