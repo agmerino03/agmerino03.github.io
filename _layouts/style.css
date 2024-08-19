@@ -15,7 +15,6 @@
 }
 
 .custom-table {
-    display: flex;
     flex-direction: column;
     width: 100%;
 }
@@ -28,7 +27,6 @@
 }
 
 .custom-cell {
-    display: flex;
     align-items: center; /* Centra verticalmente */
     text-align: left; /* Justifica a la izquierda */
     padding: 10px;
