@@ -30,12 +30,6 @@
     text-align: center;
 }
 
-.custom-table .icono span {
-    display: inline-block;
-    width: 20px; /* Ajusta el ancho del span para reducir el espacio */
-    height: 20px;
-}
-
 .custom-table .cert-title {
     font-size: 18px;
     font-weight: bold;
