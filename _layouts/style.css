@@ -33,7 +33,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px; /* Espacio entre el título y la fuente */
-    width: 250px; /* Ajusta el ancho de la columna del título */
+    width: 100px; /* Ajusta el ancho de la columna del título */
 }
 
 .platform {
