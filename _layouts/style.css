@@ -8,3 +8,52 @@
 .bg-png {
 	background: #fff url(../img/light_mosaic.png) repeat 0 0;
 }
+
+.fa-stack {
+    flex-shrink: 0; /* Evita que el ícono se reduzca si el texto es largo */
+    margin-right: 15px; /* Espacio entre el ícono y el texto */ 
+}
+
+.custom-table {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.custom-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Para separar las "filas" */
+    width: 700px;
+}
+
+.custom-cell {
+    float: left;
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: left; /* Justifica a la izquierda */
+    padding: 10px;
+}
+
+.icono {
+    width: 150px;
+}
+
+.cert-title {
+    width: 450px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.platform {
+    width: 100px;
+    font-size: 16px;
+    color: #555;
+}
+
+
