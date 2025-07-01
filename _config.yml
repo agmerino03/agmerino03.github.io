@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: My Portfolio
-email: agmerino03@gmail.com
+email: alejandro.g.merino@gmail.com
 description: "Alejandro's Portfolio"
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -37,7 +37,7 @@ social:
   - title: github
     url: http://github.com/agmg16-ua
   - title: envelope
-    url: mailto:agmerino03@gmail.com
+    url: mailto:alejandro.g.merino@gmail.com
 
 # Postal address (add as many lines as necessary)
 address:
