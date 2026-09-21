@@ -1,25 +1,356 @@
----
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>404 — Página no encontrada | Alejandro Guillén</title>
+<meta name="description" content="La página que buscas no existe o se ha movido."/>
+<meta name="robots" content="noindex"/>
+<link rel="icon" href="/img/favicon.ico"/>
+<script>
+// No-flash: aplica el tema guardado (o el del sistema) antes de pintar
+(function(){
+  try{
+    var t = localStorage.getItem('theme');
+    if(!t){ t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; }
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0b0b0c;
+  --bg2:#101012;
+  --surface:#151518;
+  --surface2:#1c1c21;
+  --border:rgba(255,255,255,0.09);
+  --border2:rgba(255,255,255,0.16);
+  --text:#ececea;
+  --text2:#9d9d98;
+  --text3:#6a6a66;
+  --accent:#e6a23c;
+  --accent-strong:#f4b458;
+  --accent-soft:rgba(230,162,60,0.12);
+  --accent-text:#171205;
+  --radius:8px;
+  --radius-sm:5px;
+  --font-head:'Space Grotesk',sans-serif;
+  --font-body:'DM Sans',sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --nav-h:66px;
+  --ease:cubic-bezier(0.4,0,0.2,1);
+  --t:0.25s var(--ease);
+}
+[data-theme="light"]{
+  --bg:#f7f6f2;
+  --bg2:#efeee8;
+  --surface:#ffffff;
+  --surface2:#f2f1ea;
+  --border:rgba(20,18,12,0.11);
+  --border2:rgba(20,18,12,0.20);
+  --text:#18171a;
+  --text2:#57554e;
+  --text3:#8a887f;
+  --accent:#b26a12;
+  --accent-strong:#8f540b;
+  --accent-soft:rgba(178,106,18,0.10);
+  --accent-text:#ffffff;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-weight:400;
+  line-height:1.7;
+  overflow-x:hidden;
+  transition:background var(--t),color var(--t);
+}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:var(--accent-text)}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--surface2);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--border2)}
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+.mono{
+  font-family:var(--font-mono);
+  font-size:0.72rem;
+  font-weight:500;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+
+/* ============ NAV ============ */
+.site-nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(1.25rem,5vw,4rem);
+  background:color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  transition:background var(--t),border-color var(--t);
+}
+.nav-logo{
+  font-family:var(--font-head);
+  font-size:1.05rem;
+  font-weight:700;
+  letter-spacing:0.02em;
+  color:var(--text);
+}
+.nav-logo::after{content:'.';color:var(--accent)}
+.nav-actions{display:flex;align-items:center;gap:0.5rem;flex-shrink:0}
+.btn-icon{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  background:transparent;
+  border:1px solid var(--border2);
+  border-radius:var(--radius-sm);
+  padding:0.4rem 0.7rem;
+  cursor:pointer;
+  color:var(--text2);
+  font-family:var(--font-mono);
+  font-size:0.74rem;
+  font-weight:500;
+  letter-spacing:0.05em;
+  transition:all var(--t);
+  white-space:nowrap;line-height:1;
+}
+.btn-icon:hover{border-color:var(--accent);color:var(--text)}
+.btn-icon #themeIcon{font-size:0.82rem;line-height:1}
+.lang-btn{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  background:transparent;
+  border:1px solid var(--border2);
+  border-radius:var(--radius-sm);
+  padding:0.4rem 0.7rem;
+  cursor:pointer;
+  color:var(--text2);
+  font-family:var(--font-mono);
+  font-size:0.74rem;
+  font-weight:500;
+  letter-spacing:0.05em;
+  transition:all var(--t);
+  white-space:nowrap;line-height:1;
+}
+.lang-btn:hover{border-color:var(--accent);color:var(--text)}
+
+/* ============ NOT FOUND ============ */
+#notfound{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:calc(var(--nav-h) + 3rem) clamp(1.25rem,8vw,8rem) 4rem;
+  position:relative;overflow:hidden;
+}
+.nf-dots{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(var(--border2) 1px,transparent 1.4px);
+  background-size:30px 30px;
+  -webkit-mask-image:radial-gradient(circle at 20% 30%,rgba(0,0,0,0.5),transparent 60%);
+  mask-image:radial-gradient(circle at 20% 30%,rgba(0,0,0,0.5),transparent 60%);
+  opacity:0.6;
+}
+.nf-content{position:relative;z-index:1;max-width:680px}
+.nf-badge{
+  display:inline-flex;align-items:center;gap:0.55rem;
+  font-family:var(--font-mono);
+  font-size:0.75rem;letter-spacing:0.04em;
+  color:var(--text2);
+  margin-bottom:2rem;
+}
+.nf-badge .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 0 var(--accent-soft);
+  animation:pulse 2.4s ease-out infinite;
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-soft)}70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.nf-code{
+  font-family:var(--font-head);
+  font-size:clamp(4.5rem,16vw,10rem);
+  font-weight:600;
+  line-height:0.9;
+  letter-spacing:-0.03em;
+  margin-bottom:1.3rem;
+  color:var(--text);
+}
+.nf-code .accent{color:var(--accent)}
+.nf-title{
+  font-family:var(--font-head);
+  font-size:clamp(1.5rem,3.2vw,2.2rem);
+  font-weight:600;letter-spacing:-0.02em;
+  margin-bottom:1rem;color:var(--text);
+}
+.nf-desc{
+  font-size:clamp(1rem,1.8vw,1.15rem);
+  color:var(--text2);
+  max-width:520px;
+  margin-bottom:2.6rem;
+  line-height:1.75;
+}
+.nf-path{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:0.82rem;
+  color:var(--text3);
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:0.4rem 0.75rem;
+  margin-bottom:2.6rem;
+  word-break:break-all;
+}
+.nf-ctas{display:flex;flex-wrap:wrap;gap:0.9rem;align-items:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:var(--accent);color:var(--accent-text);
+  padding:0.8rem 1.6rem;border-radius:var(--radius-sm);
+  font-family:var(--font-mono);font-size:0.82rem;font-weight:600;
+  letter-spacing:0.03em;border:1px solid var(--accent);cursor:pointer;
+  transition:background var(--t),border-color var(--t),transform var(--t);
+}
+.btn-primary:hover{background:var(--accent-strong);border-color:var(--accent-strong);transform:translateY(-1px)}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:transparent;color:var(--text);
+  padding:0.8rem 1.6rem;border-radius:var(--radius-sm);
+  font-family:var(--font-mono);font-size:0.82rem;font-weight:500;
+  letter-spacing:0.03em;border:1px solid var(--border2);
+  transition:border-color var(--t),color var(--t);
+}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+
+footer{
+  background:var(--bg);border-top:1px solid var(--border);
+  padding:2.2rem clamp(1.25rem,8vw,8rem);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+}
+.footer-copy{font-family:var(--font-mono);font-size:0.76rem;color:var(--text3)}
+.footer-copy span{color:var(--text2)}
+.footer-links{display:flex;gap:1.4rem}
+.footer-links a{font-family:var(--font-mono);font-size:0.76rem;color:var(--text3);transition:color var(--t)}
+.footer-links a:hover{color:var(--accent)}
+
+@media(prefers-reduced-motion:reduce){
+  .nf-badge .dot{animation:none}
+  html{scroll-behavior:auto}
+}
+@media(max-width:768px){
+  #notfound{padding:calc(var(--nav-h) + 2rem) 1.25rem 3rem}
+  footer{flex-direction:column;text-align:center}
+}
 </style>
+</head>
+<body>
 
-<div class="container">
-  <h1>404</h1>
+<!-- NAV -->
+<nav class="site-nav" role="navigation" aria-label="Navegación principal">
+  <a href="/" class="nav-logo" aria-label="Inicio">AG</a>
+  <div class="nav-actions">
+    <button class="lang-btn" id="langToggle" aria-label="Cambiar idioma" title="Switch language">EN</button>
+    <button class="btn-icon" id="themeToggle" aria-label="Cambiar tema"><span id="themeIcon">☾</span><span id="themeLabel">Oscuro</span></button>
+  </div>
+</nav>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!-- NOT FOUND -->
+<section id="notfound" aria-labelledby="nf-heading">
+  <div class="nf-dots" aria-hidden="true"></div>
+  <div class="nf-content">
+    <div class="nf-badge">
+      <span class="dot" aria-hidden="true"></span>
+      <span data-i18n="nf.badge">Error 404</span>
+    </div>
+    <h1 class="nf-code" id="nf-heading">4<span class="accent">0</span>4</h1>
+    <h2 class="nf-title" data-i18n="nf.title">Esta página se ha perdido en el despliegue</h2>
+    <p class="nf-desc" data-i18n="nf.desc">La ruta que buscas no existe, se ha movido o nunca estuvo aquí. Vuelve al inicio o escríbeme si crees que es un error.</p>
+    <div class="nf-ctas">
+      <a href="/" class="btn-primary" data-i18n="nf.home">Volver al inicio →</a>
+      <a href="mailto:alejandro.g.merino@gmail.com" class="btn-secondary" data-i18n="nf.contact">Contactar</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy" data-i18n="footer.copy">© 2026 <span>Alejandro Guillén</span>. Todos los derechos reservados.</div>
+  <nav class="footer-links" aria-label="Enlaces de contacto">
+    <a href="https://github.com/agmerino03" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/alejandro-guillen-merino-589a3223a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:alejandro.g.merino@gmail.com">Email</a>
+  </nav>
+</footer>
+
+<script>
+const i18n = {
+  es: {
+    "nf.badge":"Error 404",
+    "nf.title":"Esta página se ha perdido en el despliegue",
+    "nf.desc":"La ruta que buscas no existe, se ha movido o nunca estuvo aquí. Vuelve al inicio o escríbeme si crees que es un error.",
+    "nf.home":"Volver al inicio →",
+    "nf.contact":"Contactar",
+    "footer.copy":"© 2026 <span>Alejandro Guillén</span>. Todos los derechos reservados."
+  },
+  en: {
+    "nf.badge":"Error 404",
+    "nf.title":"This page got lost in the deployment",
+    "nf.desc":"The page you're looking for doesn't exist, was moved, or never existed. Head back home or reach out if you think this is a mistake.",
+    "nf.home":"Back to home →",
+    "nf.contact":"Contact me",
+    "footer.copy":"© 2026 <span>Alejandro Guillén</span>. All rights reserved."
+  }
+};
+
+let currentLang = 'es';
+let currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+
+function applyLang(lang){
+  currentLang = lang;
+  const t = i18n[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.getElementById('langToggle').textContent = lang === 'es' ? 'EN' : 'ES';
+  updateThemeLabel();
+  try{ localStorage.setItem('lang', lang); }catch(e){}
+}
+
+function updateThemeLabel(){
+  const label = document.getElementById('themeLabel');
+  if (!label) return;
+  label.textContent = currentTheme === 'dark'
+    ? (currentLang === 'es' ? 'Oscuro' : 'Dark')
+    : (currentLang === 'es' ? 'Claro' : 'Light');
+}
+
+function applyTheme(theme){
+  currentTheme = theme;
+  document.documentElement.setAttribute('data-theme', theme);
+  document.getElementById('themeIcon').textContent = theme === 'dark' ? '☾' : '☀';
+  updateThemeLabel();
+  try{ localStorage.setItem('theme', theme); }catch(e){}
+}
+
+document.getElementById('themeIcon').textContent = currentTheme === 'dark' ? '☾' : '☀';
+
+document.getElementById('langToggle').addEventListener('click', () => {
+  applyLang(currentLang === 'es' ? 'en' : 'es');
+});
+document.getElementById('themeToggle').addEventListener('click', () => {
+  applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+
+let startLang;
+try{
+  startLang = localStorage.getItem('lang') || ((navigator.language||'es').toLowerCase().startsWith('en') ? 'en' : 'es');
+}catch(e){ startLang = 'es'; }
+applyLang(startLang);
+</script>
+
+</body>
+</html>
