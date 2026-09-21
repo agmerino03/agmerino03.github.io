@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Alejandro Guillén — Portfolio</title>
+<title>Alejandro Guillén Merino — Portfolio</title>
 <meta name="description" content="Portfolio de Alejandro Guillén Merino — Ingeniero Informático y Desarrollador Full Stack"/>
 <link rel="icon" href="/img/favicon.ico"/>
 <script>
@@ -352,6 +352,12 @@ section{padding:clamp(4.5rem,10vw,8rem) clamp(1.25rem,8vw,8rem);position:relativ
 }
 .project-link:hover{color:var(--accent);border-color:var(--accent)}
 .project-name{font-family:var(--font-head);font-size:1.2rem;font-weight:600;color:var(--text);margin-bottom:0.6rem}
+.project-badge{
+  font-family:var(--font-mono);font-size:0.62rem;font-weight:600;
+  color:var(--accent);border:1px solid var(--accent);border-radius:var(--radius-sm);
+  padding:0.14rem 0.45rem;text-transform:uppercase;letter-spacing:0.05em;
+  vertical-align:middle;margin-left:0.4rem;
+}
 .project-desc{font-size:0.92rem;color:var(--text2);line-height:1.7;flex:1;margin-bottom:1.4rem}
 .project-tech{display:flex;flex-wrap:wrap;gap:0.4rem}
 .tech-pill{font-family:var(--font-mono);border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.2rem 0.55rem;font-size:0.7rem;color:var(--text3)}
@@ -490,7 +496,7 @@ footer{
     </div>
     <h1 class="hero-name reveal reveal-delay-1" id="hero-heading">
       Alejandro<br>
-      Guillén<span class="accent">.</span>
+      Guillén Merino<span class="accent">.</span>
     </h1>
     <p class="hero-title reveal reveal-delay-2">
       <strong data-i18n="hero.role1">Ingeniero Informático</strong>
@@ -686,6 +692,40 @@ footer{
       <div class="project-header">
         <span class="project-index">01</span>
         <div class="project-links">
+          <a href="https://fintrack-taupe-rho.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
+          <a href="https://github.com/agmerino03/fintrack" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-name">FinTrack <span class="project-badge" data-i18n="project.fintrack.badge">Beta</span></div>
+      <p class="project-desc" data-i18n="project.fintrack.desc">Aplicación web progresiva para gestionar finanzas personales: ingresos, gastos, categorías, movimientos recurrentes y ahorros encadenados mes a mes. Multiidioma y exportación a CSV/JSON.</p>
+      <div class="project-tech">
+        <span class="tech-pill">React</span><span class="tech-pill">TypeScript</span><span class="tech-pill">Supabase</span><span class="tech-pill">Tailwind CSS</span><span class="tech-pill">PWA</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-header">
+        <span class="project-index">02</span>
+        <div class="project-links">
+          <a href="https://agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
+          <a href="https://github.com/agmerino03/agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-name" data-i18n="project.portfolio.name">Este Portfolio</div>
+      <p class="project-desc" data-i18n="project.portfolio.desc">Diseño y desarrollo completo de este portfolio personal. Construido como sitio estático puro, sin frameworks, con modo oscuro/claro y soporte multiidioma.</p>
+      <div class="project-tech">
+        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">GitHub Pages</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-header">
+        <span class="project-index">03</span>
+        <div class="project-links">
           <a href="https://github.com/agmg16-ua/Frikipop" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           </a>
@@ -698,9 +738,9 @@ footer{
       </div>
     </div>
 
-    <div class="project-card reveal reveal-delay-1">
+    <div class="project-card reveal">
       <div class="project-header">
-        <span class="project-index">02</span>
+        <span class="project-index">04</span>
         <div class="project-links">
           <a href="https://github.com/agmg16-ua/Art_with_drones" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -714,9 +754,9 @@ footer{
       </div>
     </div>
 
-    <div class="project-card reveal reveal-delay-2">
+    <div class="project-card reveal reveal-delay-1">
       <div class="project-header">
-        <span class="project-index">03</span>
+        <span class="project-index">05</span>
         <div class="project-links">
           <a href="https://github.com/agmg16-ua/Adaboost_Boosting" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -730,9 +770,9 @@ footer{
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal reveal-delay-2">
       <div class="project-header">
-        <span class="project-index">04</span>
+        <span class="project-index">06</span>
         <div class="project-links">
           <a href="https://github.com/agmg16-ua/FC_AC3" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -746,9 +786,9 @@ footer{
       </div>
     </div>
 
-    <div class="project-card reveal reveal-delay-1">
+    <div class="project-card reveal">
       <div class="project-header">
-        <span class="project-index">05</span>
+        <span class="project-index">07</span>
         <div class="project-links">
           <a href="https://github.com/agmg16-ua/Data_Structures" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -759,23 +799,6 @@ footer{
       <p class="project-desc" data-i18n="project.ds.desc">Implementación de diferentes estructuras de datos funcionales en C++ con control de memoria manual. Listas enlazadas, árboles, grafos y algoritmos de ordenación.</p>
       <div class="project-tech">
         <span class="tech-pill">C++</span><span class="tech-pill">Memory Management</span><span class="tech-pill">Algorithms</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal reveal-delay-2">
-      <div class="project-header">
-        <span class="project-index">06</span>
-        <div class="project-links">
-          <a href="https://agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
-          <a href="https://github.com/agmerino03/agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="project-name" data-i18n="project.portfolio.name">Este Portfolio</div>
-      <p class="project-desc" data-i18n="project.portfolio.desc">Diseño y desarrollo completo de este portfolio personal. Construido como sitio estático puro, sin frameworks, con modo oscuro/claro y soporte multiidioma.</p>
-      <div class="project-tech">
-        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">GitHub Pages</span>
       </div>
     </div>
 
@@ -889,7 +912,7 @@ footer{
 
 <!-- FOOTER -->
 <footer role="contentinfo">
-  <p class="footer-copy" data-i18n="footer.copy">© 2026 <span>Alejandro Guillén</span>. Todos los derechos reservados.</p>
+  <p class="footer-copy" data-i18n="footer.copy">© 2026 <span>Alejandro Guillén Merino</span>. Todos los derechos reservados.</p>
   <nav class="footer-links" aria-label="Enlaces de pie">
     <a href="https://github.com/agmerino03" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/alejandro-guillen-merino-589a3223a/" target="_blank" rel="noopener">LinkedIn</a>
@@ -935,6 +958,8 @@ const i18n = {
     "skills.methodologies":"Metodologías","skills.other":"Otros","skills.mobile":"Desarrollo Móvil",
     "portfolio.tag":"Proyectos","portfolio.title":"Portfolio",
     "portfolio.subtitle":"Una selección de proyectos académicos y personales que muestran distintas áreas de mi stack técnico.",
+    "project.fintrack.badge":"Beta",
+    "project.fintrack.desc":"Aplicación web progresiva para gestionar finanzas personales: ingresos, gastos, categorías, movimientos recurrentes y ahorros encadenados mes a mes. Multiidioma y exportación a CSV/JSON.",
     "project.frikipop.desc":"Aplicación web de compraventa entre usuarios de artículos de videojuegos y tecnología. Plataforma C2C con gestión de usuarios, catálogo y sistema de transacciones.",
     "project.drones.desc":"Sistema distribuido para controlar un espectáculo de drones. Comunicación vía Kafka, consultas a través de una REST API con cifrado de datos extremo a extremo.",
     "project.adaboost.desc":"Entrenamiento de clasificadores para dígitos escritos a mano. Aprendizaje supervisado con métodos de boosting y redes neuronales artificiales usando Keras y scikit-learn.",
@@ -952,7 +977,7 @@ const i18n = {
     "form.email":"Email","form.email_ph":"tu@email.com",
     "form.message":"Mensaje","form.message_ph":"Cuéntame sobre tu proyecto...",
     "form.send":"Enviar mensaje →",
-    "footer.copy":"© 2026 <span>Alejandro Guillén</span>. Todos los derechos reservados."
+    "footer.copy":"© 2026 <span>Alejandro Guillén Merino</span>. Todos los derechos reservados."
   },
   en: {
     "nav.experience":"Experience","nav.skills":"Skills","nav.portfolio":"Portfolio",
@@ -987,6 +1012,8 @@ const i18n = {
     "skills.methodologies":"Methodologies","skills.other":"Others","skills.mobile":"Mobile Development",
     "portfolio.tag":"Projects","portfolio.title":"Portfolio",
     "portfolio.subtitle":"A selection of academic and personal projects showcasing different areas of my tech stack.",
+    "project.fintrack.badge":"Beta",
+    "project.fintrack.desc":"Progressive web app to manage personal finances: income, expenses, categories, recurring movements, and month-to-month chained savings. Multilingual with CSV/JSON export.",
     "project.frikipop.desc":"C2C web marketplace for buying and selling video game and tech items between users. Features user management, catalog, and transaction system.",
     "project.drones.desc":"Distributed system for controlling a drone show. Communication via Kafka, queries through a REST API with end-to-end data encryption.",
     "project.adaboost.desc":"Training classifiers for handwritten digits. Supervised learning with boosting methods and artificial neural networks using Keras and scikit-learn.",
@@ -1004,7 +1031,7 @@ const i18n = {
     "form.email":"Email","form.email_ph":"you@email.com",
     "form.message":"Message","form.message_ph":"Tell me about your project...",
     "form.send":"Send message →",
-    "footer.copy":"© 2026 <span>Alejandro Guillén</span>. All rights reserved."
+    "footer.copy":"© 2026 <span>Alejandro Guillén Merino</span>. All rights reserved."
   }
 };
 
