@@ -533,8 +533,8 @@ footer{
     <div>
       <div class="about-text reveal">
         <p data-i18n="about.p1">Soy <strong>Alejandro Guillén Merino</strong>, Ingeniero Informático por la Universidad de Alicante (2021–2025). Me apasiona construir soluciones robustas y bien diseñadas, tanto en frontend como en backend.</p>
-        <p data-i18n="about.p2">Actualmente trabajando como <strong>Full Stack Developer en Fundamentia</strong>, desarrollando portales web con Vue y Spring en entornos multi-proyecto. También tengo experiencia en <strong>ciberseguridad</strong> tras mi paso por Futurs analizando redes empresariales.</p>
-        <p data-i18n="about.p3">Me interesa especialmente la arquitectura de sistemas distribuidos, la seguridad de aplicaciones y el diseño de APIs escalables.</p>
+        <p data-i18n="about.p2">Actualmente trabajando como <strong>Full Stack Developer en Fundamentia</strong>, desarrollando portales web con Vue y Spring en entornos multi-proyecto basados en <strong>microservicios</strong> y comunicados mediante <strong>Apache Kafka</strong>.</p>
+        <p data-i18n="about.p3">También realizo proyectos a nivel personal para seguir formándome en otras tecnologías que me interesan.</p>
       </div>
       <div class="stats-grid">
         <div class="stat-card reveal reveal-delay-1">
@@ -566,6 +566,7 @@ footer{
           <li data-i18n="exp.fundamentia.b2">Uso de REST APIs, Struts y Apache Kafka</li>
           <li data-i18n="exp.fundamentia.b3">Autenticación con cookies y tokens JWT</li>
           <li data-i18n="exp.fundamentia.b4">Implementación de sistema de gestión documental</li>
+          <li data-i18n="exp.fundamentia.b5">Responsable de proyectos completos en producción sobre arquitectura de microservicios, con uso de IA en los proyectos</li>
         </ul>
       </div>
       <div class="timeline-item">
@@ -687,7 +688,6 @@ footer{
   <h2 class="section-title reveal reveal-delay-1" id="portfolio-heading" data-i18n="portfolio.title">Portfolio</h2>
   <p class="section-subtitle reveal reveal-delay-2" data-i18n="portfolio.subtitle">Una selección de proyectos académicos y personales que muestran distintas áreas de mi stack técnico.</p>
   <div class="projects-grid">
-
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-index">01</span>
@@ -698,7 +698,7 @@ footer{
           </a>
         </div>
       </div>
-      <div class="project-name">FinTrack <span class="project-badge" data-i18n="project.fintrack.badge">Beta</span></div>
+      <div class="project-name">FinTrack</div>
       <p class="project-desc" data-i18n="project.fintrack.desc">Aplicación web progresiva para gestionar finanzas personales: ingresos, gastos, categorías, movimientos recurrentes y ahorros encadenados mes a mes. Multiidioma y exportación a CSV/JSON.</p>
       <div class="project-tech">
         <span class="tech-pill">React</span><span class="tech-pill">TypeScript</span><span class="tech-pill">Supabase</span><span class="tech-pill">Tailwind CSS</span><span class="tech-pill">PWA</span>
@@ -708,6 +708,23 @@ footer{
     <div class="project-card reveal reveal-delay-1">
       <div class="project-header">
         <span class="project-index">02</span>
+        <div class="project-links">
+          <a href="https://curas.tailb3d487.ts.net" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
+          <a href="https://github.com/agmerino03/curas" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-name">Curas <span class="project-badge" data-i18n="project.curas.badge">Beta</span></div>
+      <p class="project-desc" data-i18n="project.curas.desc">Guía de apósitos y heridas para enfermería y personal sanitario: catálogo de apósitos, asistente de selección, comprobador de compatibilidades y asistente de vendaje de compresión, con fuentes clínicas citadas. Funciona sin registro y sin conexión.</p>
+      <div class="project-tech">
+        <span class="tech-pill">Vue.js</span><span class="tech-pill">Express</span><span class="tech-pill">Prisma</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Firebase</span><span class="tech-pill">PWA</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-header">
+        <span class="project-index">03</span>
         <div class="project-links">
           <a href="https://fundamentia.com/es/privacyshield" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
         </div>
@@ -719,9 +736,43 @@ footer{
       </div>
     </div>
 
+    <div class="project-card reveal">
+      <div class="project-header">
+        <span class="project-index">04</span>
+        <div class="project-links">
+          <a href="https://welist.tailb3d487.ts.net" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
+          <a href="https://github.com/agmerino03/welist" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-name">WeList</div>
+      <p class="project-desc" data-i18n="project.welist.desc">Listas de la compra compartidas en grupo (piso, familia, amigos) sincronizadas en tiempo real. Modo «Estoy comprando» con varios compradores a la vez, historial de compras con foto del ticket y notificaciones push. PWA y app Android.</p>
+      <div class="project-tech">
+        <span class="tech-pill">Vue.js</span><span class="tech-pill">Express</span><span class="tech-pill">Prisma</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Socket.IO</span><span class="tech-pill">Firebase</span><span class="tech-pill">Capacitor</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-header">
+        <span class="project-index">05</span>
+        <div class="project-links">
+          <a href="https://save-room.pages.dev" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
+          <a href="https://github.com/agmerino03/save-room" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-name">Save Room <span class="project-badge" data-i18n="project.saveroom.badge">Beta</span></div>
+      <p class="project-desc" data-i18n="project.saveroom.desc">PWA local-first para registrar videojuegos, consolas y partidas, presentada como una habitación gamer retro en 3D de estilo PS1/N64. Catálogo vía IGDB, estadísticas y copia de seguridad en la nube.</p>
+      <div class="project-tech">
+        <span class="tech-pill">React</span><span class="tech-pill">TypeScript</span><span class="tech-pill">Three.js</span><span class="tech-pill">Firebase</span><span class="tech-pill">Cloudflare</span><span class="tech-pill">PWA</span>
+      </div>
+    </div>
+
     <div class="project-card reveal reveal-delay-2">
       <div class="project-header">
-        <span class="project-index">03</span>
+        <span class="project-index">06</span>
         <div class="project-links">
           <a href="https://sdccm-treasure.vercel.app" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
           <a href="https://github.com/agmerino03/sdccm-treasure" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
@@ -738,7 +789,7 @@ footer{
 
     <div class="project-card reveal">
       <div class="project-header">
-        <span class="project-index">04</span>
+        <span class="project-index">07</span>
         <div class="project-links">
           <a href="https://agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="Live">↗</a>
           <a href="https://github.com/agmerino03/agmerino03.github.io" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
@@ -755,23 +806,7 @@ footer{
 
     <div class="project-card reveal reveal-delay-1">
       <div class="project-header">
-        <span class="project-index">05</span>
-        <div class="project-links">
-          <a href="https://github.com/agmg16-ua/Frikipop" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="project-name">FrikiPop</div>
-      <p class="project-desc" data-i18n="project.frikipop.desc">Aplicación web de compraventa entre usuarios de artículos de videojuegos y tecnología. Plataforma C2C con gestión de usuarios, catálogo y sistema de transacciones.</p>
-      <div class="project-tech">
-        <span class="tech-pill">ASP.NET</span><span class="tech-pill">C#</span><span class="tech-pill">MVC</span><span class="tech-pill">SQL</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal reveal-delay-2">
-      <div class="project-header">
-        <span class="project-index">06</span>
+        <span class="project-index">08</span>
         <div class="project-links">
           <a href="https://github.com/agmg16-ua/Art_with_drones" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -782,39 +817,6 @@ footer{
       <p class="project-desc" data-i18n="project.drones.desc">Sistema distribuido para controlar un espectáculo de drones. Comunicación vía Kafka, consultas a través de una REST API con cifrado de datos extremo a extremo.</p>
       <div class="project-tech">
         <span class="tech-pill">Python</span><span class="tech-pill">Kafka</span><span class="tech-pill">Docker</span><span class="tech-pill">REST API</span><span class="tech-pill">Cifrado</span>
-      </div>
-    </div>
-
-
-    <div class="project-card reveal">
-      <div class="project-header">
-        <span class="project-index">07</span>
-        <div class="project-links">
-          <a href="https://github.com/agmg16-ua/FC_AC3" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="project-name">Forward Checking & AC3</div>
-      <p class="project-desc" data-i18n="project.fc.desc">Resolución automática de crucigramas usando los métodos de búsqueda con restricciones Forward Checking y AC3. Implementación de algoritmos de IA clásicos.</p>
-      <div class="project-tech">
-        <span class="tech-pill">Python</span><span class="tech-pill">CSP</span><span class="tech-pill">AI</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-header">
-        <span class="project-index">08</span>
-        <div class="project-links">
-          <a href="https://github.com/agmg16-ua/Data_Structures" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="project-name">Data Structures</div>
-      <p class="project-desc" data-i18n="project.ds.desc">Implementación de diferentes estructuras de datos funcionales en C++ con control de memoria manual. Listas enlazadas, árboles, grafos y algoritmos de ordenación.</p>
-      <div class="project-tech">
-        <span class="tech-pill">C++</span><span class="tech-pill">Memory Management</span><span class="tech-pill">Algorithms</span>
       </div>
     </div>
 
@@ -951,8 +953,8 @@ const i18n = {
     "about.tag":"Sobre mí","about.title":"Experiencia & Educación",
     "about.subtitle":"Un recorrido por mi trayectoria profesional y académica en el mundo del desarrollo de software.",
     "about.p1":"Soy <strong>Alejandro Guillén Merino</strong>, Ingeniero Informático por la Universidad de Alicante (2021–2025). Me apasiona construir soluciones robustas y bien diseñadas, tanto en frontend como en backend.",
-    "about.p2":"Actualmente trabajando como <strong>Full Stack Developer en Fundamentia</strong>, desarrollando portales web con Vue y Spring en entornos multi-proyecto. También tengo experiencia en <strong>ciberseguridad</strong> tras mi paso por Futurs analizando redes empresariales.",
-    "about.p3":"Me interesa especialmente la arquitectura de sistemas distribuidos, la seguridad de aplicaciones y el diseño de APIs escalables.",
+    "about.p2":"Actualmente trabajando como <strong>Full Stack Developer en Fundamentia</strong>, desarrollando portales web con Vue y Spring en entornos multi-proyecto basados en <strong>microservicios</strong> y comunicados mediante <strong>Apache Kafka</strong>.",
+    "about.p3":"También realizo proyectos a nivel personal para seguir formándome en otras tecnologías que me interesan.",
     "stats.years":"Años de experiencia","stats.projects":"Proyectos completados",
     "stats.certs":"Certificaciones","stats.langs":"Idiomas",
     "exp.fundamentia.date":"Agosto 2025 – Presente","exp.fundamentia.role":"Full Stack Programmer",
@@ -960,6 +962,7 @@ const i18n = {
     "exp.fundamentia.b2":"Uso de REST APIs, Struts y Apache Kafka",
     "exp.fundamentia.b3":"Autenticación con cookies y tokens JWT",
     "exp.fundamentia.b4":"Implementación de sistema de gestión documental",
+    "exp.fundamentia.b5":"Responsable de proyectos completos en producción sobre arquitectura de microservicios, con uso de IA en los proyectos",
     "exp.futurs.date":"Jul – Ago 2024","exp.futurs.role":"Analista de Ciberseguridad",
     "exp.futurs.b1":"Análisis de incidencias de seguridad en la red del Grupo Ribera",
     "exp.futurs.b2":"Uso de Darktrace, CrowdStrike y otras herramientas SIEM",
@@ -974,16 +977,17 @@ const i18n = {
     "skills.methodologies":"Metodologías","skills.other":"Otros","skills.mobile":"Desarrollo Móvil",
     "portfolio.tag":"Proyectos","portfolio.title":"Portfolio",
     "portfolio.subtitle":"Una selección de proyectos académicos y personales que muestran distintas áreas de mi stack técnico.",
-    "project.fintrack.badge":"Beta",
     "project.fintrack.desc":"Aplicación web progresiva para gestionar finanzas personales: ingresos, gastos, categorías, movimientos recurrentes y ahorros encadenados mes a mes. Multiidioma y exportación a CSV/JSON.",
+    "project.curas.desc":"Guía de apósitos y heridas para enfermería y personal sanitario: catálogo de apósitos, asistente de selección, comprobador de compatibilidades y asistente de vendaje de compresión, con fuentes clínicas citadas. Funciona sin registro y sin conexión.",
     "project.privacyshield.badge":"Fundamentia",
     "project.privacyshield.desc":"Desarrollo completo del portal web de PrivacÿShield, el software de anonimización automática de documentos de Fundamentia. Gestión de usuarios y roles, gestión de cookies, compra de paquetes de páginas e integración con servicios externos como Stripe.",
+    "project.curas.badge":"Beta",
+    "project.welist.desc":"Listas de la compra compartidas en grupo (piso, familia, amigos) sincronizadas en tiempo real. Modo «Estoy comprando» con varios compradores a la vez, historial de compras con foto del ticket y notificaciones push. PWA y app Android.",
+    "project.saveroom.badge":"Beta",
+    "project.saveroom.desc":"PWA local-first para registrar videojuegos, consolas y partidas, presentada como una habitación gamer retro en 3D de estilo PS1/N64. Catálogo vía IGDB, estadísticas y copia de seguridad en la nube.",
     "project.sdccm.badge":"Beta",
     "project.sdccm.desc":"Aplicación web progresiva para gestionar compras y regalos de artículos durante la San Diego Comic-Con de Málaga, con rankings por evento. Gestión de usuarios y amigos, creación de eventos y seguridad mediante autenticación y Row Level Security.",
-    "project.frikipop.desc":"Aplicación web de compraventa entre usuarios de artículos de videojuegos y tecnología. Plataforma C2C con gestión de usuarios, catálogo y sistema de transacciones.",
     "project.drones.desc":"Sistema distribuido para controlar un espectáculo de drones. Comunicación vía Kafka, consultas a través de una REST API con cifrado de datos extremo a extremo.",
-    "project.fc.desc":"Resolución automática de crucigramas usando los métodos de búsqueda con restricciones Forward Checking y AC3. Implementación de algoritmos de IA clásicos.",
-    "project.ds.desc":"Implementación de diferentes estructuras de datos funcionales en C++ con control de memoria manual. Listas enlazadas, árboles, grafos y algoritmos de ordenación.",
     "project.portfolio.name":"Este Portfolio",
     "project.portfolio.desc":"Diseño y desarrollo completo de este portfolio personal. Construido como sitio estático puro, sin frameworks, con modo oscuro/claro y soporte multiidioma.",
     "certs.tag":"Formación complementaria","certs.title":"Cursos & Certificaciones",
@@ -1008,8 +1012,8 @@ const i18n = {
     "about.tag":"About me","about.title":"Experience & Education",
     "about.subtitle":"A journey through my professional and academic career in software development.",
     "about.p1":"I'm <strong>Alejandro Guillén Merino</strong>, Computer Engineer from the University of Alicante (2021–2025). I'm passionate about building robust and well-designed solutions, both in frontend and backend.",
-    "about.p2":"Currently working as a <strong>Full Stack Developer at Fundamentia</strong>, developing web portals with Vue and Spring in multi-project environments. I also have experience in <strong>cybersecurity</strong> from my time at Futurs analyzing enterprise networks.",
-    "about.p3":"I'm particularly interested in distributed systems architecture, application security, and scalable API design.",
+    "about.p2":"Currently working as a <strong>Full Stack Developer at Fundamentia</strong>, developing web portals with Vue and Spring in multi-project environments based on <strong>microservices</strong> and communicating through <strong>Apache Kafka</strong>.",
+    "about.p3":"I also build personal projects to keep learning other technologies that interest me.",
     "stats.years":"Years of experience","stats.projects":"Completed projects",
     "stats.certs":"Certifications","stats.langs":"Languages",
     "exp.fundamentia.date":"August 2025 – Present","exp.fundamentia.role":"Full Stack Programmer",
@@ -1017,6 +1021,7 @@ const i18n = {
     "exp.fundamentia.b2":"Use of REST APIs, Struts, and Apache Kafka",
     "exp.fundamentia.b3":"Cookie-based and JWT token authentication",
     "exp.fundamentia.b4":"Implementation of a document management and processing system",
+    "exp.fundamentia.b5":"In charge of complete projects in production on a microservices architecture, using AI in the projects",
     "exp.futurs.date":"Jul – Aug 2024","exp.futurs.role":"Cybersecurity Analyst",
     "exp.futurs.b1":"Security incident analysis on the Ribera Group network",
     "exp.futurs.b2":"Use of Darktrace, CrowdStrike and other SIEM tools",
@@ -1031,16 +1036,17 @@ const i18n = {
     "skills.methodologies":"Methodologies","skills.other":"Others","skills.mobile":"Mobile Development",
     "portfolio.tag":"Projects","portfolio.title":"Portfolio",
     "portfolio.subtitle":"A selection of academic and personal projects showcasing different areas of my tech stack.",
-    "project.fintrack.badge":"Beta",
     "project.fintrack.desc":"Progressive web app to manage personal finances: income, expenses, categories, recurring movements, and month-to-month chained savings. Multilingual with CSV/JSON export.",
+    "project.curas.desc":"Wound and dressing guide for nurses and healthcare staff: dressing catalog, selection assistant, product compatibility checker and compression bandaging assistant, citing clinical sources. Works without sign-up and offline.",
     "project.privacyshield.badge":"Fundamentia",
     "project.privacyshield.desc":"Full development of the PrivacÿShield web portal, Fundamentia's automatic document anonymization software. User and role management, cookie management, page package purchases, and integration with external services such as Stripe.",
+    "project.curas.badge":"Beta",
+    "project.welist.desc":"Shared shopping lists for groups (flatmates, family, friends) synced in real time. “I'm shopping” mode with several shoppers at once, purchase history with receipt photo and push notifications. PWA and Android app.",
+    "project.saveroom.badge":"Beta",
+    "project.saveroom.desc":"Local-first PWA to log video games, consoles and play sessions, presented as a retro 3D gamer room in PS1/N64 style. IGDB-powered catalog, stats and cloud backup.",
     "project.sdccm.badge":"Beta",
     "project.sdccm.desc":"Progressive web app to manage item purchases and gifts during San Diego Comic-Con Málaga, with per-event rankings. User and friend management, event creation, and security via authentication and Row Level Security.",
-    "project.frikipop.desc":"C2C web marketplace for buying and selling video game and tech items between users. Features user management, catalog, and transaction system.",
     "project.drones.desc":"Distributed system for controlling a drone show. Communication via Kafka, queries through a REST API with end-to-end data encryption.",
-    "project.fc.desc":"Automatic crossword puzzle solving using the constraint-based search methods Forward Checking and AC3. Implementation of classic AI algorithms.",
-    "project.ds.desc":"Implementation of different functional data structures in C++ with manual memory management. Linked lists, trees, graphs, and sorting algorithms.",
     "project.portfolio.name":"This Portfolio",
     "project.portfolio.desc":"Full design and development of this personal portfolio. Built as a pure static site, no frameworks, with dark/light mode and multilanguage support.",
     "certs.tag":"Additional training","certs.title":"Courses & Certifications",
